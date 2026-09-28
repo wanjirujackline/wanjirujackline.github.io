@@ -31,6 +31,8 @@ header.nav{position:sticky;top:0;background:rgba(245,247,250,.94);backdrop-filte
 .btn.pri:hover{background:var(--accent-d);border-color:var(--accent-d)}
 .btn.sec{background:transparent;color:var(--accent)}
 .btn.sec:hover{background:var(--soft)}
+.hero-grid{display:flex;align-items:center;justify-content:space-between;gap:32px}
+.photo{width:220px;height:220px;border-radius:50%;object-fit:cover;border:4px solid var(--card);box-shadow:0 0 0 2px var(--line);flex:none}
 .clocks{margin-top:38px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;max-width:640px}
 .clocks h2{font-size:1.05rem;margin-bottom:4px}
 .clocks p{margin:0 0 12px;color:var(--muted);font-size:.95rem}
@@ -85,6 +87,7 @@ summary small{display:block;font-weight:400;color:var(--muted)}
 .contact a:not(.btn){color:#fff}
 #copied{margin-left:6px;font-size:.92rem;min-height:1.4em;display:block;margin-top:10px}
 footer.site{padding:22px 0;color:var(--muted);font-size:.9rem}
+@media (max-width:700px){.hero-grid{flex-direction:column-reverse;align-items:flex-start}.photo{width:150px;height:150px}}
 @media (max-width:560px){.nav nav a{margin:0 14px 0 0}.crow{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -97,11 +100,16 @@ footer.site{padding:22px 0;color:var(--muted);font-size:.9rem}
 
 <main>
 <div class="hero"><div class="wrap">
+  <div class="hero-grid">
+  <div class="hero-text">
   <h1>Executive Assistant for CEOs and C-suite leaders</h1>
   <p class="lead">I run the calendar, inbox, travel and reporting so your executive can focus on decisions. Based in Nairobi and set up to work remotely across time zones.</p>
   <div class="btns">
     <a class="btn pri" href="#contact">Get in touch</a>
     <a class="btn sec" href="Jackline_Wanjiru_Resume.pdf" download>Download resume</a>
+  </div>
+  </div>
+  <img class="photo" src="profile.jpg" alt="Portrait of Jackline Wanjiru" width="220" height="220" onerror="this.remove()">
   </div>
   <div class="clocks" aria-label="Current time in Nairobi, London and New York">
     <h2>Working hours that overlap with yours</h2>
@@ -226,7 +234,7 @@ footer.site{padding:22px 0;color:var(--muted);font-size:.9rem}
   <h2>Let's talk</h2>
   <p class="sub">I am open to remote Executive Assistant roles. Send me a message and I will reply within one business day.</p>
   <div class="btns">
-    <a class="btn pri" href="mailto:jacklineshiruh35@gmail.com?subject=Remote%20Executive%20Assistant%20inquiry">Email me</a>
+    <a class="btn pri" href="mailto:jacklinewanjirumurithi@gmail.com?subject=Remote%20Executive%20Assistant%20inquiry">Email me</a>
     <a class="btn sec" href="https://www.linkedin.com/in/jackline-wanjiru101010/" target="_blank" rel="noopener">View LinkedIn profile</a>
     <button class="btn sec" id="copy" type="button">Copy email address</button>
   </div>
@@ -244,7 +252,7 @@ function tick(){document.querySelectorAll('[data-tz]').forEach(function(el){
 tick();setInterval(tick,30000);
 document.getElementById('copy').addEventListener('click',function(){
   var msg=document.getElementById('copied');
-  var email='jacklineshiruh35@gmail.com';
+  var email=document.querySelector('a[href^="mailto:"]').getAttribute('href').replace('mailto:','').split('?')[0];
   if(navigator.clipboard&&navigator.clipboard.writeText){
     navigator.clipboard.writeText(email).then(function(){msg.textContent='Email address copied.';},function(){msg.textContent='Copy failed. My email is '+email;});
   }else{msg.textContent='My email is '+email;}
