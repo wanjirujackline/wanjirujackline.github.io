@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jackline Wanjiru | Remote Executive Assistant</title>
+<meta name="description" content="Executive Assistant to CEOs and C-suite leaders. Calendar, travel, communications and executive reporting. Remote-ready from Nairobi (UTC+3).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16263D;--muted:#55627A;--paper:#F5F7FA;--card:#fff;--line:#D9DFE8;--accent:#1F7A6B;--accent-d:#155a4f;--soft:#E4F1EE}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Source Sans 3",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.2;margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+header.nav{position:sticky;top:0;background:rgba(245,247,250,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:5}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:12px;padding-bottom:12px;gap:16px;flex-wrap:wrap}
+.nav b{font-family:"Source Serif 4",Georgia,serif;font-size:1.1rem}
+.nav nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav nav a:hover{color:var(--ink)}
+.hero{padding:64px 0 40px}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);max-width:15ch;letter-spacing:-.01em}
+.hero p.lead{font-size:1.2rem;max-width:56ch;color:var(--muted);margin:18px 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--accent);cursor:pointer;font:inherit;font-weight:600}
+.btn.pri{background:var(--accent);color:#fff}
+.btn.pri:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn.sec{background:transparent;color:var(--accent)}
+.btn.sec:hover{background:var(--soft)}
+.clocks{margin-top:38px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;max-width:640px}
+.clocks h2{font-size:1.05rem;margin-bottom:4px}
+.clocks p{margin:0 0 12px;color:var(--muted);font-size:.95rem}
+.crow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.crow div{border-left:3px solid var(--line);padding-left:10px}
+.crow .me{border-color:var(--accent)}
+.crow span{display:block;font-size:.85rem;color:var(--muted)}
+.crow strong{font-size:1.5rem;font-variant-numeric:tabular-nums;font-family:"Source Serif 4",Georgia,serif}
+section{padding:48px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:1.9rem;margin-bottom:8px}
+.sub{color:var(--muted);max-width:62ch;margin:0 0 26px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
+.facts strong{display:block;font-size:1.7rem;font-family:"Source Serif 4",Georgia,serif;color:var(--accent)}
+.facts span{font-size:.92rem;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px}
+.card h3{font-size:1.15rem;margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.note{background:var(--soft);border-left:4px solid var(--accent);padding:12px 16px;border-radius:4px;font-size:.95rem;margin-bottom:22px;max-width:70ch}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin-bottom:12px}
+summary{cursor:pointer;padding:16px 20px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--accent)}
+details[open] summary::after{content:"\2212"}
+summary small{display:block;font-weight:400;color:var(--muted)}
+.sample{padding:0 20px 20px;font-size:.96rem}
+.sample table{width:100%;border-collapse:collapse;margin:8px 0 12px}
+.sample th,.sample td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.sample th{background:var(--paper);font-weight:600}
+.sample h4{margin:14px 0 4px;font-size:1rem}
+.sample ul{margin:4px 0 0;padding-left:20px}
+.tw{overflow-x:auto}
+.tl{list-style:none;padding:0;margin:0}
+.tl li{border-left:3px solid var(--accent);padding:0 0 22px 18px;margin-left:6px;position:relative}
+.tl li:last-child{padding-bottom:0}
+.tl h3{font-size:1.15rem}
+.tl .meta{color:var(--muted);font-size:.93rem;margin:2px 0 8px}
+.tl ul{margin:0;padding-left:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 12px}
+.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:.95rem}
+.quote{margin:0}
+.quote p{font-family:"Source Serif 4",Georgia,serif;font-size:1.1rem;color:var(--ink);margin-bottom:10px}
+.quote footer{font-size:.92rem;color:var(--muted)}
+.contact{background:var(--ink);color:#fff;border-top:0}
+.contact h2,.contact p{color:#fff}
+.contact .sub{color:#C9D3E3}
+.contact .btn.pri{background:#fff;color:var(--ink);border-color:#fff}
+.contact .btn.pri:hover{background:var(--soft)}
+.contact .btn.sec{color:#fff;border-color:#fff}
+.contact .btn.sec:hover{background:rgba(255,255,255,.12)}
+.contact a:not(.btn){color:#fff}
+#copied{margin-left:6px;font-size:.92rem;min-height:1.4em;display:block;margin-top:10px}
+footer.site{padding:22px 0;color:var(--muted);font-size:.9rem}
+@media (max-width:560px){.nav nav a{margin:0 14px 0 0}.crow{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <b>Jackline Wanjiru</b>
+  <nav aria-label="Main"><a href="#about">About</a><a href="#services">Services</a><a href="#samples">Work samples</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <h1>Executive Assistant for CEOs and C-suite leaders</h1>
+  <p class="lead">I run the calendar, inbox, travel and reporting so your executive can focus on decisions. Based in Nairobi and set up to work remotely across time zones.</p>
+  <div class="btns">
+    <a class="btn pri" href="#contact">Get in touch</a>
+    <a class="btn sec" href="Jackline_Wanjiru_Resume.pdf" download>Download resume</a>
+  </div>
+  <div class="clocks" aria-label="Current time in Nairobi, London and New York">
+    <h2>Working hours that overlap with yours</h2>
+    <p>Nairobi is UTC+3 with no daylight saving. It overlaps most of the working day with London and the early part of the day in New York.</p>
+    <div class="crow">
+      <div class="me"><span>Nairobi</span><strong data-tz="Africa/Nairobi">--:--</strong></div>
+      <div><span>London</span><strong data-tz="Europe/London">--:--</strong></div>
+      <div><span>New York</span><strong data-tz="America/New_York">--:--</strong></div>
+    </div>
+  </div>
+</div></div>
+
+<section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <p class="sub">I have supported senior leaders for more than five years, currently as Executive Assistant to the CEO at CareConnect Mobile. I am careful with confidential information, calm with competing priorities, and I follow through. My degree is in Operations Research, so I am comfortable with numbers and turn data into clear summaries for decision-makers.</p>
+  <ul class="facts">
+    <li><strong>5+</strong><span>years supporting senior leaders</span></li>
+    <li><strong>200+</strong><span>executive reports, presentations and briefings</span></li>
+    <li><strong>50+</strong><span>internal and external stakeholders</span></li>
+    <li><strong>50+</strong><span>executive-level meetings a year</span></li>
+    <li><strong>30%</strong><span>better scheduling efficiency for the CEO</span></li>
+  </ul>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h2>How I support executives</h2>
+  <p class="sub">Everything below is work I do today or have done in past roles.</p>
+  <div class="grid">
+    <div class="card"><h3>Calendar management</h3><p>Own a complex schedule, protect focus time, and resolve conflicts before they reach the executive.</p></div>
+    <div class="card"><h3>Inbox and correspondence</h3><p>Triage high-volume email, calls and requests so the right things get answered quickly.</p></div>
+    <div class="card"><h3>Meetings and events</h3><p>Agendas, logistics, materials, and follow-up actions sent out on time.</p></div>
+    <div class="card"><h3>International travel</h3><p>Itineraries, bookings and logistics for senior executives travelling abroad.</p></div>
+    <div class="card"><h3>Reports and presentations</h3><p>Accurate briefing documents, slide decks and summaries, built in Excel, Power BI and PowerPoint.</p></div>
+    <div class="card"><h3>Stakeholder communication</h3><p>Professional, consistent communication with internal teams and external partners.</p></div>
+  </div>
+</div></section>
+
+<section id="samples"><div class="wrap">
+  <h2>Work samples</h2>
+  <p class="sub">Open a sample to see how I structure this kind of work.</p>
+  <div class="note"><strong>About these samples:</strong> they are illustrative formats I created to show my approach. They contain no real company, client or executive information.</div>
+
+  <details>
+    <summary><span>Weekly executive briefing<small>A one-page look ahead so the executive starts Monday prepared</small></span></summary>
+    <div class="sample">
+      <h4>Top priorities this week</h4>
+      <ul><li>Finalize the quarterly partner update</li><li>Approve the hiring plan for the operations team</li><li>Prepare for Thursday's external partner call</li></ul>
+      <h4>Calendar at a glance</h4>
+      <div class="tw"><table>
+        <tr><th>Day</th><th>Key items</th><th>Prep needed</th></tr>
+        <tr><td>Mon</td><td>Leadership team sync, 10:00</td><td>Agenda and last week's action list</td></tr>
+        <tr><td>Wed</td><td>Two-hour focus block</td><td>All meetings declined or moved</td></tr>
+        <tr><td>Thu</td><td>External partner call, 15:00</td><td>One-page background and talking points</td></tr>
+      </table></div>
+      <h4>Decisions needed</h4>
+      <ul><li>Approve revised proposal, by Wednesday</li><li>Confirm travel dates for next month, by Friday</li></ul>
+      <h4>Open follow-ups</h4>
+      <ul><li>Reply to two vendor requests (drafts ready for review)</li></ul>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>International trip itinerary<small>One document with everything the executive needs on the road</small></span></summary>
+    <div class="sample">
+      <p>Traveller: Executive A &middot; Route: Nairobi to London and back &middot; 4 days</p>
+      <div class="tw"><table>
+        <tr><th>When</th><th>Plan</th><th>Details</th></tr>
+        <tr><td>Day 1, evening</td><td>Depart Nairobi</td><td>Flight number, seat, and booking reference</td></tr>
+        <tr><td>Day 2</td><td>Arrive, hotel check-in, 14:00 stakeholder meeting</td><td>Hotel address, transfer arranged, meeting location and contact</td></tr>
+        <tr><td>Day 3</td><td>Full day of meetings</td><td>Timed schedule, breakfast and dinner reservations</td></tr>
+        <tr><td>Day 4</td><td>Return flight</td><td>Checkout time, airport transfer, boarding details</td></tr>
+      </table></div>
+      <h4>Also included</h4>
+      <ul><li>Visa and passport validity check completed before booking</li><li>Local emergency contacts and hotel phone numbers</li><li>Backup plan if a flight is delayed</li></ul>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>Meeting follow-up summary<small>Decisions and actions recorded the same day</small></span></summary>
+    <div class="sample">
+      <p>Meeting: Monthly leadership sync &middot; Attendees: five leaders &middot; Sent within a few hours</p>
+      <h4>Decisions made</h4>
+      <ul><li>Launch date moved by two weeks to allow for testing</li><li>Budget review postponed to next month</li></ul>
+      <h4>Actions</h4>
+      <div class="tw"><table>
+        <tr><th>Action</th><th>Owner</th><th>Due</th></tr>
+        <tr><td>Share revised timeline with the team</td><td>Head of Operations</td><td>Friday</td></tr>
+        <tr><td>Send updated proposal to the partner</td><td>CEO's office</td><td>Next Tuesday</td></tr>
+      </table></div>
+    </div>
+  </details>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <ol class="tl" style="margin-top:22px">
+    <li><h3>Executive Assistant, CareConnect Mobile</h3>
+      <p class="meta">Jul 2024 to present &middot; AI workforce platform for home care and post-acute care organizations</p>
+      <ul><li>Manage the CEO's calendar and scheduling priorities, improving scheduling efficiency by 30%.</li><li>Prepare and coordinate 200+ executive reports, presentations and briefing materials.</li><li>Coordinate 50+ executive-level meetings a year.</li></ul></li>
+    <li><h3>Administrative Assistant, Kenya Institute of Curriculum Development</h3>
+      <p class="meta">Apr 2021 to May 2024 &middot; Kenya's national curriculum development agency</p>
+      <ul><li>Supported senior leadership and contributed to a 20% increase in team productivity.</li><li>Coordinated international travel and logistics for senior executives.</li><li>Mentored and trained five junior administrative staff.</li></ul></li>
+  </ol>
+  <h3 style="margin:34px 0 12px">Skills and tools</h3>
+  <ul class="chips"><li>Microsoft 365</li><li>Outlook</li><li>Advanced Excel</li><li>PowerPoint</li><li>Power BI</li></ul>
+  <p class="sub" style="margin:0">Currently learning: project management, SQL, Tableau and R. Education: BSc Operations Research, Jomo Kenyatta University of Agriculture and Technology.</p>
+</div></section>
+
+<!-- TESTIMONIALS: this section stays hidden until you add real quotes.
+     1. Replace the text inside each <blockquote> with a real quote you have permission to use.
+     2. Replace the name and role line.
+     3. Delete the word "hidden" from the <section> tag below. -->
+<section id="testimonials" hidden><div class="wrap">
+  <h2>What colleagues say</h2>
+  <div class="grid" style="margin-top:22px">
+    <blockquote class="card quote"><p>"Paste a real quote here."</p><footer>Name, role, organization</footer></blockquote>
+    <blockquote class="card quote"><p>"Paste a second real quote here."</p><footer>Name, role, organization</footer></blockquote>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Let's talk</h2>
+  <p class="sub">I am open to remote Executive Assistant roles. Send me a message and I will reply within one business day.</p>
+  <div class="btns">
+    <a class="btn pri" href="mailto:jacklineshiruh35@gmail.com?subject=Remote%20Executive%20Assistant%20inquiry">Email me</a>
+    <a class="btn sec" href="https://www.linkedin.com/in/jackline-wanjiru101010/" target="_blank" rel="noopener">View LinkedIn profile</a>
+    <button class="btn sec" id="copy" type="button">Copy email address</button>
+  </div>
+  <span id="copied" role="status" aria-live="polite"></span>
+</div></section>
+</main>
+
+<footer class="site"><div class="wrap">&copy; <span id="yr"></span> Jackline Wanjiru &middot; Nairobi, Kenya (UTC+3)</div></footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+function tick(){document.querySelectorAll('[data-tz]').forEach(function(el){
+  try{el.textContent=new Intl.DateTimeFormat('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:el.dataset.tz}).format(new Date());}catch(e){}
+});}
+tick();setInterval(tick,30000);
+document.getElementById('copy').addEventListener('click',function(){
+  var msg=document.getElementById('copied');
+  var email='jacklineshiruh35@gmail.com';
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(email).then(function(){msg.textContent='Email address copied.';},function(){msg.textContent='Copy failed. My email is '+email;});
+  }else{msg.textContent='My email is '+email;}
+});
+</script>
+</body>
+</html>
